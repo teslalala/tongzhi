@@ -1,0 +1,28 @@
+<view class="main">
+ <view class="imagesize1">
+ <image src="/image/xiong.png" class="profile"></image>
+ </view>
+ <view class="select-title"><text>慵懒的小熊</text></view>
+  <view class="imagesize2">
+ <image src="/image/tuandui.png" class="tubiao"></image>
+ <navigator url="../xjtd/xjtd">
+ <image src="/image/xinjiantuandui.png" class="tubiao1"></image>
+ </navigator>
+ </view>
+ <view class="imagesize2">
+ <image src="/image/xiaoxi.png" class="tubiao"></image>
+ <navigator url="../fbxx/fbxx">
+ <image src="/image/发布消息.png" class="tubiao1"></image>
+ </navigator>
+ </view>
+ <view class="imagesize2">
+ <image src="/image/jiaru.png" class="tubiao"></image>
+ <navigator url="../jiarutuandui/jiarutuandui">
+ <image src="/image/加入团队.png" class="tubiao1"></image>
+ </navigator>
+ </view>
+  <view class="imagesize2">
+ <image src="/image/心.png" class="tubiao"></image>
+ <image src="/image/我的收藏.png" class="tubiao1"></image>
+ </view>
+</view>

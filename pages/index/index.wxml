@@ -1,0 +1,19 @@
+<!--<view class="main">
+  <view class="orders-box">
+    <view class="orders">
+    <image src="/image/点.png" class="tubiao"></image>  团日活动
+    </view>
+  </view>
+  <view class="orders-box">
+    <view class="orders">
+    <image src="/image/点.png" class="tubiao"></image>  网络公选作业
+    </view>
+  </view>
+  <view class="orders-box">
+    <view class="orders">
+    <image src="/image/点.png" class="tubiao"></image>  XXX比赛结果公示
+    </view>
+  </view>
+</view>-->
+
+  <view class="td1">目前暂无团队,请前往“我的”加入或创建团队</view>

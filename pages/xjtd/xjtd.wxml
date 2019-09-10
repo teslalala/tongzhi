@@ -1,0 +1,45 @@
+
+<view class="container">
+  <view class="login-icon">
+    <image class="login-img" src="/image/众人.png"></image>
+  </view>
+  <view class="login-from">
+
+    <!--团队名称-->
+    <view class="inputView">
+      <label class="loginLab">团队名称</label>
+      <input class="inputText" placeholder="请输入团队名称" bindinput="phoneInput" />
+    </view>
+    <view class="line"></view>
+ 
+    <!--团队编号-->
+    <view class="inputView">
+      <label class="loginLab">团队编号</label>
+      <input class="inputText" placeholder="请输入编号" bindinput="phoneInput" />
+    </view>
+    <view class="line"></view>
+ 
+    <!--团队密码-->
+    <view class="inputView">
+
+      <label class="loginLab">团队密码</label>
+      <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput1" />
+    </view>
+    <view class="line"></view>
+
+    <!--重复密码-->
+    <view class="inputView">
+
+      <label class="loginLab">重复密码</label>
+      <input class="inputText" password="true" placeholder="再次输入密码" bindinput="passwordInput2" />
+    </view>
+    <view class="line"></view>
+
+
+
+    <!--按钮-->
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">新建团队</button>
+    </view>
+  </view>
+</view>

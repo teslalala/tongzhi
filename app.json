@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",  
+    "pages/mypage/mypage",
+    "pages/wode/wode",
+    "pages/shezhi/shezhi",
+    "pages/jiarutuandui/jiarutuandui",
+    "pages/xjtd/xjtd",
+    "pages/fbxx/fbxx",
+    "pages/about/about",
+    "pages/fankui/fankui"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20B2AA",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#b7b7b7",
+    "selectedColor":"#20B2AA",
+    "backgroundColor":"#f5f5f5",
+    "borderStyle":"white",
+    "list":[
+      {
+        "pagePath": "pages/wode/wode",
+        "iconPath": "image/wo.png",
+        "selectedIconPath": "image/wo1.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/xiaoxihei.png",
+        "selectedIconPath": "image/xiaoxixinfengnews1.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/shezhi/shezhi",
+        "iconPath": "image/duomeitiicon-.png",
+        "selectedIconPath": "image/duomeitiicon1-.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+    "debug": false 
+}
+

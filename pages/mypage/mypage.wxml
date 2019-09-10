@@ -1,0 +1,4 @@
+<view class="container">
+<text>Hello wechet app</text>
+<button type="default" bindtap="anniu">测试</button>
+</view>

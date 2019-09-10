@@ -1,0 +1,31 @@
+<view class="main">
+  <view class="login-icon">
+    <image class="login-img" src="/image/duomeitiicon-.png"></image>
+  </view>
+  <navigator url="../xjtd/xjtd" class="address-box">
+      <view class="address-manage">
+          新消息通知
+      </view>
+  </navigator>
+    <navigator url="../fankui/fankui" class="address-box">
+      <view class="address-manage">
+          帮助与反馈
+      </view>
+  </navigator>
+    <navigator url="../about/about" class="address-box">
+      <view class="address-manage">
+          关于我们
+      </view>
+  </navigator>
+    <navigator url="../xjtd/xjtd" class="address-box">
+      <view class="address-manage">
+          管理团队
+      </view>
+  </navigator>
+    <navigator url="../login/login" class="address-box">
+    <view class="address-manage">
+      <text wx:if="{{is_bind}}">退出登录</text>
+      <text wx:else>登录帐号</text>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,46 @@
+.profile{
+  width: 200rpx;
+  height: 200rpx;
+  border: 40 solid #FFFFFF;
+  border-radius: 200rpx;
+  background-color: #FFFFFF;
+}
+.tubiao{
+  width: 100rpx;
+  height: 100rpx;
+  border: 0 solid #FFFFFF;
+  border-radius: 100rpx;
+  background-color: #FFFFFF;
+}
+.tubiao1{
+  width: 500rpx;
+  height: 100rpx;
+  border: 0 solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+.imagesize1{
+ display:flex;
+ height: 120px;   
+ flex-direction: row ;              
+ justify-content: center;        
+ align-items:center; 
+}
+.imagesize2{
+ display:flex;
+ height: 80px;  
+ flex-direction: row ;               
+ justify-content: center;   
+ align-items:center; 
+}
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 1rpx;
+}
+.select-title{
+    width: 100%;
+    padding:30rpx 0;
+    height: 30rpx;
+    color: rgb(184, 182, 180);
+    text-align: center;
+}

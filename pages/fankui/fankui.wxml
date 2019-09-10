@@ -1,0 +1,17 @@
+ <view class="container">
+    <block >
+      <text class="issues-label">新建反馈</text>
+      <view class="issues-panel">
+       <view class="issues-input {{(showError&&!title)?'error':''}}">
+         <input placeholder="请输入反馈标题" bindinput="listenerTitle" />
+        </view>
+        <textarea class="issues-textarea {{(showError&&!content)?'error':''}}" cursor-spacing="50" placeholder="请输入反馈内容"     bindinput="listenerTextarea"></textarea>
+     </view>
+
+
+     <text class="issues-remind">您的反馈将会上传至我们的后端，我们会尽量及时做出回应；此外，您还可以加“消息管理发布小程序”用户反馈QQ号1071304766进行即时反馈，不过此途径需要备注说明你是小程序反馈用户。另注：频繁恶意反馈的用户将取消其反馈资格。</text>
+      <view class="submit-btn {{uploading?'disabled':''}}" bindtap="submit">
+        <text>提交反馈</text>
+      </view>
+    </block>
+  </view>

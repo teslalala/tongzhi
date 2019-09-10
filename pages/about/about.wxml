@@ -1,0 +1,12 @@
+    <view class="version">
+      <view class="version-title">
+        <text class="title-name">消息发布小程序</text>
+        <text class="version-text">测试</text>
+      </view>
+    </view>
+    <view class="describe" wx:if="{{!showLog}}">
+        <text class="desc-title">简介</text>
+        <text class="desc-content">“消息发布管理”以微信小程序为形式，无需下载安装，只需要登陆并且申请加入，等待管理员同意即可加入，或者使用密钥加入对应的群体。，同时具有出色的使用体验。</text>
+        <text class="desc-content">“消息发布管理”一个具有通知提醒、分类、管理等功能的微信小程序，以解决校园消息通知形式多、种类繁多、消息干扰和效率低等问题，营造良好的学习和交流氛围。</text>
+        <text class="desc-content">“消息发布管理”小程序更是/更有... （期待您的发现）</text>
+    </view>

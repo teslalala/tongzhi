@@ -1,0 +1,71 @@
+<view class="container">
+    <view wx:if="{{remind}}" class="remind-box">
+        <image wx:if="{{remind == '加载中'}}" class="remind-img" src="/images/loading.gif"></image>
+        <block wx:else>
+          <image class="remind-img" src="/images/nothing.png"></image>
+          <text class="remind-text">{{remind}}</text>
+        </block>
+    </view>
+    <block wx:else>
+    <text class="declare-context-title">所需发布到的团队和内容类型</text>
+        <view class="repair-detail">
+            <view class="repair-detail-item {{(showError&&!serviceTypeValue)?'error':''}}">
+                <view class="repair-detail-item-hd">
+                    <text class="repair-detail-name">发布团队</text>
+                    <view class="repair-detail-item-ft">
+                        <picker class="repair-detail-picker" bindchange="listenerServiceType" value="{{serviceTypeValue}}" range="{{serviceTypeRange}}">  
+                            <view class="repair-detail-content">
+                                <text wx:if="{{serviceTypeValue === false}}" class="repair-detail-info">请选择发布内容类型</text>
+                                <text wx:else class="repair-detail-info">{{serviceTypeRange[serviceTypeValue]}}</text>
+                                <image class="more-icon" src="/image/enter.png"></image>
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="repair-detail-item {{(showError&&!serviceObjectValue)?'error':''}}">
+                <view class="repair-detail-item-hd">
+                    <text class="repair-detail-name">内容类型</text>
+                    <view class="repair-detail-item-ft">
+                        <picker class="repair-detail-picker" bindchange="listenerServiceObject" value="{{serviceObjectValue}}" range="{{serviceObjectRange}}" disabled="{{!serviceTypeValue}}">
+                            <view class="repair-detail-content">
+                                <text wx:if="{{!serviceTypeValue}}" class="repair-detail-info disabled">请先选择发布内容类型</text>
+                                <text wx:elif="{{serviceObjectValue === false}}" class="repair-detail-info">请选择发布内容类型</text>
+                                <text wx:else class="repair-detail-info">{{serviceObjectRange[serviceObjectValue]}}</text>   
+                                <image class="more-icon" src="/image/enter.png"></image>
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <!--<view class="repair-detail-item {{(showError&&!serviceAreaValue)?'error':''}}">
+                <view class="repair-detail-item-hd">
+                    <text class="repair-detail-name">服务区域</text>
+                    <view class="repair-detail-item-ft">
+                        <picker class="repair-detail-picker" bindchange="listenerServiceArea" value="{{serviceAreaValue}}" range="{{serviceAreaRange}}">  
+                            <view class="repair-detail-content">
+                                <text wx:if="{{serviceAreaValue === false}}" class="repair-detail-info">请选择服务区域</text>
+                                <text wx:else class="repair-detail-info">{{serviceAreaRange[serviceAreaValue]}}</text>   
+                                <image class="more-icon" src="/image/enter.png"></image>
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+            </view>-->
+        </view>
+
+        <text class="declare-context-title">发布内容</text>
+        <view class="declare-context">
+            <view class="declare-context-panel">
+                <view class="declare-context-input {{(showError&&!formData.Title)?'error':''}}">
+                    <input placeholder="请输入内容标题" bindinput="listenerTitle"/>
+                </view>
+                <textarea cursor-spacing="50" class="declare-context-textarea {{(showError&&!formData.Content)?'error':''}}" placeholder="请输入具体内容" bindinput="listenerTextarea"></textarea>
+            </view>
+        </view>
+
+        <view class="submit-declare" bindtap="submitApply">
+            <text>发布消息</text>
+        </view>
+    </block>
+</view>
